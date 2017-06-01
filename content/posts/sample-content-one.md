@@ -3,8 +3,8 @@ title: Sample Content One
 subtitle: Sample Subtitle
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quisquam et nostrum."
 author: Ryan Watters
-date: {}
-publishDate: {}
+date: 2016-01-16
+publishDate: 2016-02-01
 categories: 
   - category 1
 tags: 

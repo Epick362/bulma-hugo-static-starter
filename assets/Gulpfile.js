@@ -34,7 +34,7 @@ gulp.task('sass', function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-  return gulp.src('js/modules/*.js')
+  return gulp.src('js/**/*.js')
     .pipe(concat('main.js'))
     .pipe(babel({
       presets: ['es2015']
@@ -54,9 +54,8 @@ gulp.task('scripts', function() {
 
 //the default "compile" task for sass and js
 gulp.task('compile', ['sass', 'scripts'], function() {
-  gulp.watch(['scss/*.scss', 'scss/modules/*scss'], ['sass']);
-  gulp.watch("scss/partials/*.scss", ['sass']);
-  gulp.watch("js/modules/*.js", ['scripts']);
+  gulp.watch('scss/**/*.scss', ['sass']);
+  gulp.watch('js/**/*.js', ['scripts']);
   // gulp.watch("../content/**/*.md", ['markdown']);
 });
 
