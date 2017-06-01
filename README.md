@@ -1,22 +1,12 @@
-# Hugo Starter Kit with Gulp Asset Pipeline
+# Hugo Starter Kit with Gulp Asset Pipeline and Bulma.io
 
 ## About This Kit
 
-This kit includes basic boilerplate for creating static sites with [Hugo](https://gohugo.io/). 
+This kit includes basic boilerplate for creating static sites with [Hugo](https://gohugo.io/) and basic stylic with [Bulma.io](http://bulma.io/). 
 
 If you are confused about source organization, build steps, modules, etc, every partial, `.js`, and `.scss` file includes thorough comments. 
 
-For more detailed information on the Gulp Asset Pipeline, see the [README in the `assets` folder](https://github.com/rdwatters/hugo-starter/tree/master/assets).
-
-## What This Kit Is *Not*
-
-This kit is not a theme. This kit is for those who want to build their site's style from scratch.
-
-This kit is not a replacement for the [official Hugo Documentation](http://gohugo.io/overview/introduction/). If you are new to Hugo, I'd recommend reading the documentation first. If you have questions related to building your site, join the [Hugo Discuss Forum](https://discuss.gohugo.io/). 
-
-This kit is (probably) not as friendly to PC users since my development experience is limited to OSX. This is a shortcoming on my part. I'll continue to develop the documentation to be cross-platform.
-
-> **Note:** The workflow inherent in the build process is my own and reflects my own biases. This kit may be too opinionated for seasoned developers. My intent is to provide sane defaults and save beginners time.
+For more detailed information on the Gulp Asset Pipeline, see the [README in the `assets` folder](https://github.com/Epick362/bulma-hugo-static-starter/tree/master/assets).
 
 ## Requirements
 
@@ -31,11 +21,11 @@ This kit is (probably) not as friendly to PC users since my development experien
 Once you've installed the requirements - 
 
 * `cd ~/path/to/your/site/directory/`
-* `git clone https://github.com/rdwatters/hugo-starter`
-* `cd hugo-starter && hugo serve`
+* `git clone https://github.com/Epick362/bulma-hugo-static-starter`
+* `cd bulma-hugo-static-starter && hugo serve`
 * (New Terminal Tab) `cd assets/ && npm install` 
 * `gulp`
-* Open your browser to `localhost:1313`. You should see "Hugo Starter Kit" and social icons.
+* Open your browser to `localhost:1313`.
 
 ## Features
 
@@ -79,21 +69,6 @@ Once you've installed the requirements -
 * Taxonomies (tags, categories)
 * jQuery CDN (boolean)
 * Minimal BlackFriday settings
- 
-## SVG & Font Awesome Icons
-
-* 30 svg icons in `partials/svg_icons` for easier embedding and styling via CSS, resolution independence, and fewer HTTP requests 
-* On your first `hugo server`, all social media icons in the bottom left are pulled from the SVG icon directory
-* Font Awesome Version 4.5.0 (`/assets/scss/fontawesome/\*scss` & `/static/css/fonts/fontawesome` for actual font files). You can search the full list of icons [here](https://fortawesome.github.io/Font-Awesome/icons/).
-
-## Open Source Fonts
-
-* `/static/css/fonts/` includes Open Sans, Lato, Montserrat, Noto Serif, Raleway, Roboto, Source Sans Pro, and Ubuntu.
-* `/assets/scss/modules/_font-face.scss` has been created with a naming convention so that you can include the font of your choice with a single `$font` variable in `variables.scss`. See the comments in `_font-face.scss` and `variables.scss` for more details.
-
-## Utilities
-
-* `linkcheck.go`. Run this file from the root by typing `go linkcheck.go` to see if any of your internal links are broken. Errors should be thrown to the terminal.
-* `build-and-deploy-hugo.sh`. (In Development) See script comments before running `bash build-and-deploy-hugo.sh`. 
-* `CNAME`,`robots.txt` 
    
+   
+## Original project without Bulma.io dependency can be found here: https://github.com/rdwatters/hugo-starter
